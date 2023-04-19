@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,15 +14,32 @@
         }
     </style>
 </head>
+
 <body>
-    <h1>  Iniciando meus estudos com DOM.</h1>
+    <h1>Iniciando meus estudos com DOM.</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <p>Aprendendo a redirecionar com getElementByTagName.</p>
+    <p id="id">Aprendendo a redirecionar com getElementByID.</p>
+    <p name="nome">Aprendendo a redirecionar com getElementByName.</p>
+    <p class="classe">Aprendendo a redirecionar com getElementByClassName.</p>
     <div>Clique em mim</div>
+    <p id="seletor">Aprendendo a redirecionar com querySelector.</p>
     <script>
         var p1 = window.document.getElementsByTagName('p')[1]
-        window.document.write(p1.innerHTML)
-        p1.style.color = 'blue'
+        window.document.write(p1.innerText + '<br>')
+
+        var p2 = window.document.getElementById('id')
+        window.document.write(p2.innerText + '<br>')
+
+        var p3 = window.document.getElementsByName('nome')[0]
+        window.document.write(p3.innerText + '<br>')
+
+        var p4 = window.document.getElementsByClassName('classe')[0]
+        window.document.write(p4.innerText + '<br>')
+
+        var p5 = window.document.querySelector('p#seletor')
+        window.document.write(p5.innerText)
     </script>
 </body>
+
 </html>
