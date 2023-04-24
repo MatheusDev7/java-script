@@ -13,6 +13,11 @@ body{
 header{
     color: white;
     text-align: center;
+    padding: 20px 0px;
+}
+
+#msg{
+    margin-bottom: 10px;
 }
 
 section{
@@ -21,15 +26,18 @@ section{
     padding: 15px;
     width: 500px;
     margin: auto;
+    
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
 }
 
-#foto > img{
-    width: 500px;
+div{
+    text-align: center;
+    padding: 5px;
 }
 
 footer{
     color: white;
+    padding-top: 10px;
     text-align: center;
     font-style: italic;
 }
