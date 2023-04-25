@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(101, 141, 228);
+    background-color: rgb(35, 40, 88);
     font: normal 15pt Arial;
 }
 
@@ -36,6 +36,12 @@ div{
 
 div > p{
     padding-top: 10px;
+}
+
+img{
+    padding-top: 10px;
+    width: 350px;
+    border-radius: 50%;
 }
 
 footer{
